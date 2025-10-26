@@ -5,14 +5,16 @@ import no.hvl.dat100.oppgave1.*;
 
 public class Tekst extends Innlegg {
 
-	// TODO: objektvariable 
+	// objektvariable
+	private String tekst;
 	
 	public Tekst () {
 		
 	}
 	
 	public Tekst(int id, String bruker, String dato, String tekst) {
-		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
+		this.id = id;
+		this
 	}
 	
 	public Tekst(int id, String bruker, String dato, int likes, String tekst) {
