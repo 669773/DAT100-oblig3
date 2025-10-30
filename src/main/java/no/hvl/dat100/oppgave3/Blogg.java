@@ -70,15 +70,17 @@ public class Blogg {
 		}
 		return false;
 	}
-	
+
 	public String toString() {
-		int count = 0;
-		for(int i =0;i<innleggtabell.length;i++){
-			if(innleggtabell[i] !=null){
-				count ++;
+		String result = getAntall() + "\n";
+
+		for (Innlegg innlegg : innleggtabell) {
+			if (innlegg != null) {
+				result += innlegg.toString();
 			}
 		}
-		return count+Innlegg.Tekst.toString();
+
+		return result;
 	}
 
 	// valgfrie oppgaver nedenfor
